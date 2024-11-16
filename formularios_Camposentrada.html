@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos Formularios</title>
+</head>
+<body>
+    <!--Campos formularios-->
+    <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese aqui el nombre">
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese aqui la contraseña">
+        <br>
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais">
+            <option value="usa">USA</option>
+            <option value="Bolivia">Bolivia</option>
+        </select>
+        <br>
+        <label for="pais">Pais</label >
+        <select name="pais" id="pais" multiple>
+            <option value="usa">USA</option>
+            <option value="Bolivia">Bolivia</option>
+        </select>
+        <br>
+        <label for="archivo">Cargar Archivo</label>
+        <input type="file" name="archivo" id="archivo">
+        <br>
+        <label for="archivo">Cargar Archivo</label>
+        <input type="file" name="archivo" id="archivo" multiple>
+        <br>
+        <label for="color">Color Favorito</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <label for="puntuacion">Puntuacion</label>
+        <input type="range" name="puntuacion" id="puntuacion" min="1" max="10">
+
+        
+    </form> 
+</body>
+</html>
